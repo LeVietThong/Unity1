@@ -1,0 +1,10 @@
+[
+{
+	id: chungnv,
+	pass: 123456
+},
+{
+	id: binhhd,
+	pass: 645213
+}
+]
