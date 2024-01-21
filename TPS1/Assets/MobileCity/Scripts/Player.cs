@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
             confettiBlastRainbow.Play();
             canShootParticle = false;
             particleCooldownTimer = particleCooldownTime;
-            Debug.Log("123");
+           
         }
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Layouts;
+
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -16,6 +17,7 @@ namespace StarterAssets
 #endif
     public class ThirdPersonController : MonoBehaviour
     {
+       
 
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
@@ -163,6 +165,9 @@ namespace StarterAssets
             
             _fallTimeoutDelta = FallTimeout;
 
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
 
         }
 
@@ -187,6 +192,8 @@ namespace StarterAssets
             {
                 isSliding = false;
             }
+
+            
         }
 
         private void LateUpdate()
